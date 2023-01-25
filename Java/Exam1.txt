@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+
+class Main {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    int first = scan.nextInt();
+    int second = scan.nextInt();
+
+    int add = first + second;
+    int sub = first - second;
+    int mult = first * second;
+    int div = first / second;
+
+    System.out.println("Addition: " + first + " + " + second + " = "+ add);
+    System.out.println("Subtraction: " + first + " - " + second + " = " + sub);
+    System.out.println("Multiplication: " + first + " * " + second + " = " + mult);
+    System.out.println("Division: " + first + " / " + second + " = " + div);
+  }
+}
