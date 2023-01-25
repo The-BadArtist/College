@@ -1,0 +1,10 @@
+module rs_latch(Q1, Q2, s, r);
+
+  input s, r;
+  output Q1, Q2;
+  wire setter, reset;
+  
+  nor(Q1, r, Q2);
+  nor(Q2, s, Q1);
+  
+ endmodule //rs_latch 
